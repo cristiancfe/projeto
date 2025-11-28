@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Galeria com Paginação</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Galeria de Imagens</h1>
+
+<div class="card">
+    <h2>Enviar imagem</h2>
+    <form id="formImg">
+        <input type="text" id="nome" placeholder="Nome da imagem">
+        <input type="file" id="imgInput" accept="image/*" required>
+        <button type="submit">Salvar</button>
+    </form>
+</div>
+
+<h2>Imagens</h2>
+<div id="galeria" class="galeria"></div>
+
+<div class="paginacao">
+    <button id="anterior">Anterior</button>
+    <span id="infoPagina"></span>
+    <button id="proximo">Próximo</button>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Editar nome</h3>
+        <input type="text" id="editNome">
+        <button id="salvarEdit">Salvar</button>
+        <button id="fecharModal">Cancelar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
